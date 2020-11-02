@@ -23,17 +23,17 @@ export default class OrderInfo extends React.Component {
     render() {
         return (
             <LinearGradient useAngle={true} angle={91.5} colors={['#E2E2E2', '#C9D6FF']} style={{ flex: 1, }}>
-                <View style={{ padding: 20, height: "100%" }}>
-                    <Text h4 style={{ textAlign: "left", marginBottom: 20 }}>Orders</Text>
-                    <ScrollView style={{ padding: 10 }}>
+                <Text h4 style={{ textAlign: "left", marginTop: 20 }}>Orders</Text>
+                <View style={{ padding: 10, height: "100%" }}>
+                    <ScrollView style={{ padding: 10, width: "100%" }} contentContainerStyle={{ alignItems: "center" }}>
                         {this.state.orders && this.state.orders.map((order, key) => {
-                            return <Card containerStyle={{ padding: 10, borderRadius: 15 }} key={key}>
+                            return <View style={{ backgroundColor: "white", padding: 10, borderRadius: 15, width: "90%" }}>
                                 <OrderListEntry order={order} navigation={this.props.navigation} />
                                 <Card.Divider />
                                 <Text>Order Number : {order.id}</Text>
                                 <Text>Address : {order.address + order.addressDtail}</Text>
                                 <Text>Status : {order.payment_status} </Text>
-                            </Card>
+                            </View>
                         })}
                     </ScrollView>
                 </View>
