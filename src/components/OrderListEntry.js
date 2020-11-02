@@ -15,7 +15,7 @@ export default class OrderListEntry extends React.Component {
         let { title, price, image } = order.products[0]
         return (
             <TouchableOpacity onPress={() => navigation.navigate('ProductDetail', { info: orderInfo.product })} >
-                <View style={{ flexDirection: "row", marginBottom: 10, width: "100%", justifyContent: "space-between" }}>
+                <View style={{ flexDirection: "row", marginBottom: 15, width: "100%", justifyContent: "space-between" }}>
                     <Image source={{ uri: `${SERVER}${image}` }} style={{ width: 90, height: 90 }} />
                     <View>
                         <ListItem.Title style={{ letterSpacing: 1.5 }}>{title.toUpperCase()}</ListItem.Title>
