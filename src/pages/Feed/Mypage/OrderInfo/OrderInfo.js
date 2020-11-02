@@ -28,16 +28,13 @@ export default class OrderInfo extends React.Component {
                     <ScrollView style={{ padding: 10 }}>
                         {this.state.orders && this.state.orders.map((order, key) => {
                             return <Card containerStyle={{ padding: 10, borderRadius: 15 }} key={key}>
-                                <Card.Title>
-                                    <OrderListEntry order={order} navigation={this.props.navigation} />
-                                </Card.Title>
+                                <OrderListEntry order={order} navigation={this.props.navigation} />
                                 <Card.Divider />
                                 <Text>Order Number : {order.id}</Text>
                                 <Text>Address : {order.address + order.addressDtail}</Text>
                                 <Text>Status : {order.payment_status} </Text>
                             </Card>
-                        })
-                        }
+                        })}
                     </ScrollView>
                 </View>
             </LinearGradient>

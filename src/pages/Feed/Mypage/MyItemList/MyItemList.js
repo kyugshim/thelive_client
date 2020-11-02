@@ -16,11 +16,15 @@ export default class MyItemList extends React.Component {
             list: []
         }
         this.getItems = this.getItems.bind(this)
+        this.handleDelete = this.handleDelete.bind(this)
     }
 
     getItems() {
         Axios.get(`${SERVER}/myitem`)
-            .then(data => this.setState({ list: data.data }))
+            .then(data => {
+                this.setState({ list: data.data })
+                console.log(this.state.list)
+            })
     }
 
     componentDidMount = () => {
