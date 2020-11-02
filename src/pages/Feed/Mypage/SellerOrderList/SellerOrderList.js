@@ -37,10 +37,10 @@ export default class SellerOrderList extends React.Component {
         return (
             <LinearGradient useAngle={true} angle={91.5} colors={['#E2E2E2', '#C9D6FF']} style={{ height: "100%", width: "100%" }}>
                 <Text h4 style={{ textAlign: "left", marginTop: 20 }}>Orders</Text>
-                <View style={{ padding: 10, height: "100%", width: "100%", alignItems: "center", marginBottom: 15 }}>
+                <View style={{ padding: 10, height: "100%", width: "100%", alignItems: "center" }}>
                     <ScrollView style={{ padding: 10, width: "100%" }} contentContainerStyle={{ alignItems: "center" }}>
                         {this.state.orders && this.state.orders.map((order, key) => {
-                            return <View style={{ width: "90%", backgroundColor: "white", padding: 10, borderRadius: 15 }} key={key} >
+                            return <View style={{ width: "90%", backgroundColor: "white", padding: 10, borderRadius: 15, marginBottom: 15 }} key={key} >
                                 <OrderListEntry order={order} navigation={this.props.navigation} />
                                 <Card.Divider />
                                 <View style={{ flexDirection: "row", alignSelf: "center", alignContent: "flex-end" }} >

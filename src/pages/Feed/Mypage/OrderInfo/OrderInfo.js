@@ -27,7 +27,7 @@ export default class OrderInfo extends React.Component {
                 <View style={{ padding: 10, height: "100%" }}>
                     <ScrollView style={{ padding: 10, width: "100%" }} contentContainerStyle={{ alignItems: "center" }}>
                         {this.state.orders && this.state.orders.map((order, key) => {
-                            return <View style={{ backgroundColor: "white", padding: 10, borderRadius: 15, width: "90%" }}>
+                            return <View style={{ backgroundColor: "white", padding: 10, borderRadius: 15, width: "90%", marginBottom: 15 }} key={key}>
                                 <OrderListEntry order={order} navigation={this.props.navigation} />
                                 <Card.Divider />
                                 <Text>Order Number : {order.id}</Text>
