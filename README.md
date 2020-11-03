@@ -1,4 +1,5 @@
 # THE LIVE
+<img src="https://user-images.githubusercontent.com/66895623/97944866-30d79980-1dc9-11eb-9a24-1f8602bf6c01.jpg" width="400">
 
 **THE LIVE는 라이브 스트리밍 기반의 쇼핑 플랫폼 입니다**
 <br/><br/>
