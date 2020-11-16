@@ -1,0 +1,16 @@
+---
+name: 회고template
+about: 우리 모두 회고 합시다.
+title: '[retrospect] "N"주차 회고 - "이름"'
+labels: retrospect, 진실의방, 화이팅!, 회고
+assignees: Kim-144, kimwunhae, kyugshim, p33a33
+
+---
+
+:fire: **Fact(사실)** : (주요 사건에서 내가 취한 행동을 객관적으로 서술한다)
+
+:zap: **Feeling(느낌)** : (그때 느꼈던 기분을 간략히 정리한다)
+
+:memo: **Finding(교훈)**: (사건에서 얻은 교훈을 적는다)
+
+:rocket: **Future action(행동)** : (그래서 내가 앞으로 취할 행동을 미래형으로 적는다)
